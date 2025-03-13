@@ -1,0 +1,302 @@
+body {
+    background-color: #212121;
+    margin: 0;
+}
+
+.contenido {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+.banner {
+    text-align: center;
+}
+
+.banner h1 {
+    font-family: 'Karla', sans-serif;
+    font-size: 50px;
+}
+
+.IA {
+    color: #29da9f;
+}
+
+.lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+    font-family: 'Inconsolata', sans-serif;
+    font-size: 20px;
+}
+
+.lista li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.2s ease-in;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    border: 1px solid #131313;
+    transition: border 0.2s ease-in;
+    font-family: 'Inconsolata', sans-serif;
+
+    --c: #29da9f;
+    --b: 5px;
+    --g: 20px;
+
+    padding: calc(var(--g) + var(--b));
+    --_g: #0000 25%, var(--c) 0;
+    background:
+        conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+        conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat;
+
+    cursor: pointer;
+    text-align: center;
+}
+
+.card:hover {
+    --_i: 100%;
+    transition: .3s, background-size .3s .3s;
+    border: 1px solid white;
+    cursor: auto;
+}
+
+.card h2 {
+    transition: color 0.2s 0.35s ease-in;
+    text-decoration: dotted underline;
+}
+
+.linea {
+    color: #29da9f;
+    position: relative;
+}
+
+.linea::before {
+    content: '';
+    position: absolute;
+    text-decoration: underline;
+    width: 166px;
+    height: 5px;
+    background-color: #29da9f;
+    top: 90%;
+    left: 25%;
+}
+
+.lista-nav {
+    align-content: center;
+    justify-content: center;
+}
+
+ul {
+    margin-left: -20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li:hover {
+    color: #29da9f;
+}
+
+.card:hover h2 {
+    text-decoration-color: white;
+    color: #29da9f;
+}
+
+.info {
+    font-family: 'Karla', sans-serif;
+    font-size: 30px;
+}
+
+.linea-info {
+    position: relative;
+    color: #29da9f;
+}
+
+.linea-info::before {
+    position: absolute;
+    background-color: #29da9f;
+    content: '';
+    width: 184px;
+    height: 5px;
+    top: 100%;
+    left: 10%;
+}
+
+.linea2 {
+    color: #29da9f;
+}
+
+.diagonal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    text-align: left;
+}
+
+.content {
+    width: 820px;
+}
+
+.content h2 {
+    font-family: 'Karla', sans-serif;
+    font-size: 30px;
+}
+
+
+
+.otraLinea {
+    position: relative;
+    color: #29da9f;
+}
+
+.otraLinea::before {
+    position: absolute;
+    background-color: #29da9f;
+    content: '';
+    width: 123px;
+    height: 5px;
+    top: 100%;
+    left: 10%;
+}
+
+.otraLinea2 {
+    color: #29da9f;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Karla', sans-serif;
+    position: relative;
+}
+
+.grid-container::before {
+    position: absolute;
+    content: '';
+    top: 15%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    background-color: #21aa7c;
+    border-radius: 50%;
+    filter: blur(600px);
+
+}
+
+.grid-container>* {
+    padding: 20px;
+    position: relative;
+}
+
+
+.image-wrapper {
+    display: grid;
+    position: relative;
+    place-content: center;
+}
+
+.image-wrapper img{
+    --c: #29da9f;
+    --b: 5px;
+    --g: 1px;
+
+    padding: calc(var(--g) + var(--b));
+    --_g: #0000 25%, var(--c) 0;
+    background:
+        conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+        conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat;
+
+}
+
+.image-wrapper img:hover {
+    --_i: 100%;
+    transition: .3s, background-size .3s .3s;
+    outline: 1px solid white;
+    cursor: auto;
+}
+
+
+
+.image-wrapper::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    filter: blur(250px);
+    border-radius: 5px;
+    background-color: #3380f2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+
+.image-wrapper::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #3380f2;
+    right: calc(auto + 10px);
+    bottom: calc(100% - 20px);
+    transition:  .3s;
+}
+
+.image-wrapper:hover::after{
+    bottom: calc(55% - 20px);
+    right: calc(auto + 10px);
+    transition: bottom .3s, right .3s;
+}
+
+.grid-container p::after {
+    content: '';
+    position: absolute;
+    height: calc(100% - 25px);
+    width: 5px;
+    background-color: #29da9f;
+    right: 5px;
+    top: 10px;
+}
+
+.grid-container p::before {
+    content: '';
+    position: absolute;
+    height: calc(100% - 25px);
+    width: 5px;
+    background-color: #29da9f;
+    left: 5px;
+    top: 10px;
+}
